@@ -1,20 +1,5 @@
-<!--
-=========================================================
-* Material Dashboard 2 - v3.0.4
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8" />
@@ -22,18 +7,17 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-    Material Dashboard 2 by Creative Tim
+    GreenDotSys - HURB - Conta-Hotel
   </title>
-  <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-  <!-- Nucleo Icons -->
+
   <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
+
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <!-- Material Icons -->
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-  <!-- CSS Files -->
+
   <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
 </head>
 
@@ -46,15 +30,15 @@
       <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Profile</li>
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Paginas</a></li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">UAC-Conta</li>
           </ol>
-          <h6 class="font-weight-bolder mb-0">Profile</h6>
+          <h6 class="font-weight-bolder mb-0">Controle de Conta</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
             <div class="input-group input-group-outline">
-              <label class="form-label">Type here...</label>
+              <label class="form-label">Pesquisar</label>
               <input type="text" class="form-control">
             </div>
           </div>
@@ -62,7 +46,7 @@
             <li class="nav-item d-flex align-items-center">
               <a href="../pages/sign-in.html" class="nav-link text-body font-weight-bold px-0">
                 <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign In</span>
+                <span class="d-sm-inline d-none">Log-in</span>
               </a>
             </li>
             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
@@ -88,15 +72,23 @@
                   <a class="dropdown-item border-radius-md" href="javascript:;">
                     <div class="d-flex py-1">
                       <div class="my-auto">
-                        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm  me-3 ">
+                          <svg  fill="black;" class="h-8qpjjf avatar-sm me-3  " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 98 30"><defs><path id="a" d="M0 .592h32.552V21.6H0z"></path></defs><g fill="inherit" fill-rule="evenodd"><g transform="translate(0 8.334)">
+                            <mask id="b" fill="#fff">
+                              <use xlink:href="#a">
+                              </use>
+                            </mask>
+                            <path d="M16.276 21.6C4.78 21.6-.446 13.624.03 1.75.03.87.837.593 2.262.593c1.33 0 2.422.184 2.376 1.159-.285 9.46 2.66 15.49 11.638 15.49 9.075 0 12.02-6.169 11.64-15.49C27.867.776 28.96.59 30.29.59c1.425 0 2.232.279 2.232 1.16.475 12.01-4.845 19.849-16.247 19.849" mask="url(#b)"></path></g><path d="M9.034 7.888l.048 6.882c0 .989 1.014 1.272 2.174 1.225 1.496-.048 2.413-.376 2.317-1.366a202.643 202.643 0 0 1-.418-4.809 87.439 87.439 0 0 1 3.121-.047c1.305 0 2.21.069 3.069.123a210.404 210.404 0 0 1-.413 4.733c-.097.99.82 1.318 2.317 1.366 1.16.047 2.172-.236 2.172-1.225l.05-6.882c.145-2.78.386-4.195.675-6.362C24.243.583 23.47.11 21.925.017c-1.303-.094-2.365.189-2.365 1.178a78.03 78.03 0 0 1-.02 5.181c-2.306.108-4.429.11-6.576-.01a77.745 77.745 0 0 1-.019-5.171c0-.99-1.062-1.272-2.365-1.178-1.546.094-2.318.566-2.221 1.509.289 2.167.53 3.582.675 6.362m29.995 16.523h4.342v-8.663a4.007 4.007 0 0 1 1.023-.677 3.105 3.105 0 0 1 1.353-.289c.536 0 .964.148 1.287.44.321.296.483.829.483 1.601v7.588h4.342v-8.828c0-1.38-.367-2.462-1.1-3.243-.734-.781-1.749-1.172-3.046-1.172a4.93 4.93 0 0 0-2.394.607c-.743.404-1.4.929-1.976 1.572l.026-7.13h-4.34V24.41zm25.096-4.028c-.258.24-.571.441-.94.607a2.997 2.997 0 0 1-1.241.248c-.554 0-.986-.152-1.299-.456-.313-.302-.47-.84-.47-1.614v-7.586h-4.342v8.828c0 1.38.358 2.46 1.074 3.243.717.781 1.717 1.172 3.003 1.172.856 0 1.646-.198 2.372-.594a7.284 7.284 0 0 0 1.843-1.393v1.573h4.342V11.582h-4.342v8.8zm32.886-5.311c-.28-.819-.662-1.518-1.148-2.098a4.974 4.974 0 0 0-1.751-1.338 5.292 5.292 0 0 0-2.227-.468c-.842 0-1.56.184-2.158.551a7.806 7.806 0 0 0-1.512 1.187l.025-6.689h-4.339v18.608l4.062-.552c.428.147.92.272 1.47.372.55.101 1.04.153 1.471.153.877 0 1.714-.162 2.507-.483a6.165 6.165 0 0 0 2.088-1.394 6.604 6.604 0 0 0 1.414-2.194c.346-.854.518-1.815.518-2.882 0-1.03-.14-1.955-.42-2.773m-4.67 5.573c-.498.654-1.21.98-2.132.98-.776 0-1.431-.175-1.966-.526v-5.655c.294-.257.608-.47.942-.635.33-.166.738-.247 1.218-.247.885 0 1.555.307 2.008.924.452.617.678 1.476.678 2.579 0 1.066-.25 1.927-.748 2.58m-11.704-9.02a4.1 4.1 0 0 0-1.18-.179c-1.237 0-2.211.648-2.924 1.944v-1.836h-4.045v12.857h4.045v-7.32c.894-2.11 3.558-1.788 4.104-1.692v-3.774z">
+                          </path>
+                        </g>
+                      </svg>
                       </div>
                       <div class="d-flex flex-column justify-content-center">
                         <h6 class="text-sm font-weight-normal mb-1">
-                          <span class="font-weight-bold">New message</span> from Laur
+                          <span class="font-weight-bold">Nova Mensagem</span> de HURB
                         </h6>
                         <p class="text-xs text-secondary mb-0">
                           <i class="fa fa-clock me-1"></i>
-                          13 minutes ago
+                          5 minutos atrás
                         </p>
                       </div>
                     </div>
@@ -106,15 +98,15 @@
                   <a class="dropdown-item border-radius-md" href="javascript:;">
                     <div class="d-flex py-1">
                       <div class="my-auto">
-                        <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm bg-gradient-dark  me-3 ">
+                        <i class="fa-duotone fa-circle-exclamation avatar avatar-sm me-3" fill="red;"></i>
                       </div>
                       <div class="d-flex flex-column justify-content-center">
                         <h6 class="text-sm font-weight-normal mb-1">
-                          <span class="font-weight-bold">New album</span> by Travis Scott
+                          <span class="font-weight-bold">Hóspede ausente</span> <span class="text-danger">Equipamentos ligados</span>
                         </h6>
                         <p class="text-xs text-secondary mb-0">
                           <i class="fa fa-clock me-1"></i>
-                          1 day
+                          1 dia
                         </p>
                       </div>
                     </div>
@@ -140,7 +132,7 @@
                       </div>
                       <div class="d-flex flex-column justify-content-center">
                         <h6 class="text-sm font-weight-normal mb-1">
-                          Payment successfully completed
+                          Manuntenção necessária em equipamento
                         </h6>
                         <p class="text-xs text-secondary mb-0">
                           <i class="fa fa-clock me-1"></i>
@@ -165,16 +157,16 @@
         <div class="row gx-4 mb-2">
           <div class="col-auto">
             <div class="avatar avatar-xl position-relative">
-              <img src="../assets/img/bruce-mars.jpg" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+              <img src="../assets/img/LOGO HOTELTEMP.png" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
             </div>
           </div>
           <div class="col-auto my-auto">
             <div class="h-100">
               <h5 class="mb-1">
-                Richard Davis
+                Hotel Paraíso dos Testes
               </h5>
               <p class="mb-0 font-weight-normal text-sm">
-                CEO / Co-Founder
+                Admin User
               </p>
             </div>
           </div>
@@ -208,48 +200,54 @@
             <div class="col-12 col-xl-4">
               <div class="card card-plain h-100">
                 <div class="card-header pb-0 p-3">
-                  <h6 class="mb-0">Platform Settings</h6>
+                  <h6 class="mb-0">Controle de Alertas</h6>
                 </div>
                 <div class="card-body p-3">
-                  <h6 class="text-uppercase text-body text-xs font-weight-bolder">Account</h6>
+                  <h6 class="text-uppercase text-body text-xs font-weight-bolder">Software</h6>
                   <ul class="list-group">
                     <li class="list-group-item border-0 px-0">
                       <div class="form-check form-switch ps-0">
                         <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault" checked>
-                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault">Email me when someone follows me</label>
+                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault">Avise-me quando um quarto necessitar manuntenção</label>
                       </div>
                     </li>
                     <li class="list-group-item border-0 px-0">
                       <div class="form-check form-switch ps-0">
-                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault1">
-                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault1">Email me when someone answers on my post</label>
+                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault10" checked>
+                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault1">Avise-me ao um Sensor continuar <span style="color: red">Positivo</span> indevidamente</label>
                       </div>
                     </li>
                     <li class="list-group-item border-0 px-0">
                       <div class="form-check form-switch ps-0">
-                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault2" checked>
-                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault2">Email me when someone mentions me</label>
+                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault2">
+                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault2">Notifique-me via e-mail também.</label>
                       </div>
                     </li>
                   </ul>
-                  <h6 class="text-uppercase text-body text-xs font-weight-bolder mt-4">Application</h6>
+                  <h6 class="text-uppercase text-body text-xs font-weight-bolder mt-4">Controle de Conta</h6>
                   <ul class="list-group">
                     <li class="list-group-item border-0 px-0">
                       <div class="form-check form-switch ps-0">
                         <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault3">
-                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault3">New launches and projects</label>
+                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault3">Buscar atualizações automaticamente.</label>
                       </div>
                     </li>
                     <li class="list-group-item border-0 px-0">
-                      <div class="form-check form-switch ps-0">
-                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault4" checked>
-                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault4">Monthly product updates</label>
-                      </div>
+                      <form role="form" class="text-start">
+                        <div class="input-group input-group-outline my-3">
+                          <label class="form-label">paraisoGDSHotel</label>
+                          <input type="text" class="form-control" disabled>
+                        </div>
+                        <div class="input-group input-group-outline mb-3">
+                          <label class="form-label">Senha</label>
+                          <input type="password" class="form-control">
+                        </div>
+                        </form>
                     </li>
                     <li class="list-group-item border-0 px-0 pb-0">
                       <div class="form-check form-switch ps-0">
                         <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault5">
-                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault5">Subscribe to newsletter</label>
+                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault5">Receber novidades por e-mail da GreenDotSys?</label>
                       </div>
                     </li>
                   </ul>
@@ -261,7 +259,7 @@
                 <div class="card-header pb-0 p-3">
                   <div class="row">
                     <div class="col-md-8 d-flex align-items-center">
-                      <h6 class="mb-0">Profile Information</h6>
+                      <h6 class="mb-0">Perfil da Conta GDsys</h6>
                     </div>
                     <div class="col-md-4 text-end">
                       <a href="javascript:;">
@@ -272,14 +270,13 @@
                 </div>
                 <div class="card-body p-3">
                   <p class="text-sm">
-                    Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).
-                  </p>
+                    Infos
+                   </p>
                   <hr class="horizontal gray-light my-4">
                   <ul class="list-group">
-                    <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Full Name:</strong> &nbsp; Alec M. Thompson</li>
-                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Mobile:</strong> &nbsp; (44) 123 1234 123</li>
-                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Email:</strong> &nbsp; alecthompson@mail.com</li>
-                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Location:</strong> &nbsp; USA</li>
+                    <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">CNPJ:</strong> &nbsp; 00.111.222/0001-01</li>
+                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Nome Fantasia:</strong>exemplo@mail.com</li>
+                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Location:</strong> &nbsp; BR</li>
                     <li class="list-group-item border-0 ps-0 pb-0">
                       <strong class="text-dark text-sm">Social:</strong> &nbsp;
                       <a class="btn btn-facebook btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
@@ -517,7 +514,7 @@
         </div>
       </div>
     </div>
-    <footer class="footer py-4  ">
+    <footer class="footer py-4">
       <div class="container-fluid">
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6 mb-lg-0 mb-4">
@@ -525,106 +522,30 @@
               © <script>
                 document.write(new Date().getFullYear())
               </script>,
-              made with <i class="fa fa-heart"></i> by
-              <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
-              for a better web.
+              GreenDotSys by
+              <a href="#" class="font-weight-bold" target="_blank">Dende.js</a>
+              por uma melhor sustentatibilidade em negócios.
             </div>
           </div>
           <div class="col-lg-6">
             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
               <li class="nav-item">
-                <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">Creative Tim</a>
+                <a href="#" class="nav-link text-muted" target="_blank"></a>
               </li>
               <li class="nav-item">
-                <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About Us</a>
+                <a href="#" class="nav-link text-muted" target="_blank">Sobre a Dende.js</a>
               </li>
               <li class="nav-item">
-                <a href="https://www.creative-tim.com/blog" class="nav-link text-muted" target="_blank">Blog</a>
+                <a href="#" class="nav-link text-muted" target="_blank">HURB</a>
               </li>
-              <li class="nav-item">
-                <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted" target="_blank">License</a>
-              </li>
+
             </ul>
           </div>
         </div>
       </div>
     </footer>
   </div>
-  <div class="fixed-plugin">
-    <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
-      <i class="material-icons py-2">settings</i>
-    </a>
-    <div class="card shadow-lg">
-      <div class="card-header pb-0 pt-3">
-        <div class="float-start">
-          <h5 class="mt-3 mb-0">Material UI Configurator</h5>
-          <p>See our dashboard options.</p>
-        </div>
-        <div class="float-end mt-4">
-          <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
-            <i class="material-icons">clear</i>
-          </button>
-        </div>
-        <!-- End Toggle Button -->
-      </div>
-      <hr class="horizontal dark my-1">
-      <div class="card-body pt-sm-3 pt-0">
-        <!-- Sidebar Backgrounds -->
-        <div>
-          <h6 class="mb-0">Sidebar Colors</h6>
-        </div>
-        <a href="javascript:void(0)" class="switch-trigger background-color">
-          <div class="badge-colors my-2 text-start">
-            <span class="badge filter bg-gradient-primary active" data-color="primary" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
-          </div>
-        </a>
-        <!-- Sidenav Type -->
-        <div class="mt-3">
-          <h6 class="mb-0">Sidenav Type</h6>
-          <p class="text-sm">Choose between 2 different sidenav types.</p>
-        </div>
-        <div class="d-flex">
-          <button class="btn bg-gradient-dark px-3 mb-2 active" data-class="bg-gradient-dark" onclick="sidebarType(this)">Dark</button>
-          <button class="btn bg-gradient-dark px-3 mb-2 ms-2" data-class="bg-transparent" onclick="sidebarType(this)">Transparent</button>
-          <button class="btn bg-gradient-dark px-3 mb-2 ms-2" data-class="bg-white" onclick="sidebarType(this)">White</button>
-        </div>
-        <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
-        <!-- Navbar Fixed -->
-        <div class="mt-3 d-flex">
-          <h6 class="mb-0">Navbar Fixed</h6>
-          <div class="form-check form-switch ps-0 ms-auto my-auto">
-            <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarFixed" onclick="navbarFixed(this)">
-          </div>
-        </div>
-        <hr class="horizontal dark my-3">
-        <div class="mt-2 d-flex">
-          <h6 class="mb-0">Light / Dark</h6>
-          <div class="form-check form-switch ps-0 ms-auto my-auto">
-            <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version" onclick="darkMode(this)">
-          </div>
-        </div>
-        <hr class="horizontal dark my-sm-4">
-        <a class="btn bg-gradient-info w-100" href="https://www.creative-tim.com/product/material-dashboard-pro">Free Download</a>
-        <a class="btn btn-outline-dark w-100" href="https://www.creative-tim.com/learning-lab/bootstrap/overview/material-dashboard">View documentation</a>
-        <div class="w-100 text-center">
-          <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star creativetimofficial/material-dashboard on GitHub">Star</a>
-          <h6 class="mt-3">Thank you for sharing!</h6>
-          <a href="https://twitter.com/intent/tweet?text=Check%20Material%20UI%20Dashboard%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard" class="btn btn-dark mb-0 me-2" target="_blank">
-            <i class="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
-          </a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-dashboard" class="btn btn-dark mb-0 me-2" target="_blank">
-            <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--   Core JS Files   -->
+
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
@@ -638,9 +559,7 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
   </script>
-  <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/material-dashboard.min.js?v=3.0.4"></script>
 </body>
 
