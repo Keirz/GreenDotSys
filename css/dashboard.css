@@ -1,4 +1,13 @@
 .card-conteudo {
     box-shadow: 1px 1px 5px #000;
-    min-height: 15rem;
+    min-height: 10rem;
+}
+
+.cards-section {
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 20px
+}
+
+.cards-section .nav {
+    
 }
