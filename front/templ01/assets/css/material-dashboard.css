@@ -21402,7 +21402,7 @@ fieldset:disabled .btn {
 }
 
 .dark-version .dropdown .dropdown-menu:before {
-  color: #202940;
+  color: #1e392a;
 }
 
 .dark-version .dropdown .dropdown-menu .dropdown-item:hover,
@@ -21419,7 +21419,7 @@ fieldset:disabled .btn {
 .dark-version .swal2-popup,
 .dark-version .dropdown .dropdown-menu,
 .dark-version .kanban-board {
-  background: #202940;
+  background: #1e392a;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -21513,7 +21513,7 @@ fieldset:disabled .btn {
 }
 
 .dark-version .nav.bg-white {
-  background-color: #202940 !important;
+  background-color: #1e392a !important;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -21522,7 +21522,7 @@ fieldset:disabled .btn {
 }
 
 .dark-version .toast {
-  background-color: #202940 !important;
+  background-color: #1e392a !important;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -21546,7 +21546,7 @@ fieldset:disabled .btn {
 }
 
 .dark-version .choices .choices__list.choices__list--dropdown {
-  background: #202940;
+  background: #1e392a;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -22524,11 +22524,11 @@ label,
 }
 
 .bg-gradient-primary {
-  background-image: linear-gradient(195deg, #61CE70 0%, #EC407A 70%);
+  background-image: linear-gradient(195deg, #1e392a 0%, #3cc47c 100%);
 }
 
 .bg-gradient-secondary {
-  background-image: linear-gradient(195deg, #747b8a 0%, #495361 100%);
+  background-image: linear-gradient(195deg, #828081 0%, #e9c893 100%);
 }
 
 .bg-gradient-success {
@@ -22548,11 +22548,11 @@ label,
 }
 
 .bg-gradient-light {
-  background-image: linear-gradient(195deg, #EBEFF4 0%, #CED4DA 100%);
+  background-image: linear-gradient(195deg, #EBEFF4 0%, #e9c893 100%);
 }
 
 .bg-gradient-dark {
-  background-image: linear-gradient(195deg, #191919 40%, #61CE70 100%);
+  background-image: linear-gradient(195deg, #1e392a 40%, #3cc47c 100%);
 }
 
 .bg-gradient-faded-primary {
