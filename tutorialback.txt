@@ -1,0 +1,13 @@
+tutorial do back, depois adicioanr no readme e apagar isso aq
+
+node v14.17.1
+
+acessar a pasta GreenDotSys
+
+npm install (verifica no app/config/db.js se esta td correto)
+
+npx sequelize-cli db:migrate
+npx sequelize-cli db:seed:all
+
+
+npm start

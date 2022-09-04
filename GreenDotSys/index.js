@@ -11,24 +11,11 @@ app.engine('ejs', require('ejs-locals'));
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/dashboard', (req, res)=>{
-  res.render('dashboard', {games: [{name:"AAA", description:"BBB"}]})
-})
+const routes = require('./routes/index');
 
-app.post('/login', (req, res) => {
-  const { username, password } = req.body;
-  const auth = login(username, password)
-  return auth
+app.get('/dashboard', (req, res) => {
+  res.render('dashboard', { games: [{ name: "AAA", description: "BBB" }] })
 })
-
-app.post('/survey', (req, res) => {
-  console.log(req.body)
-  const { interests, degree, workHours, profile } = req.body
-  console.log(interests)
-  console.log(workHours)
-  res.status(200).json({mock:"meu ovo"})
-})
-
 
 app.listen(3000, ()=>{
   console.log("O app está rodando na porta 3000!")
