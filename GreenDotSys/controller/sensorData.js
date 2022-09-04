@@ -7,12 +7,17 @@ client.on("error", (error) => {
 });
 
 async function subscribe(channel, callback) {
-    const subscriber = client.duplicate();
- 
-    await subscriber.connect();
-    await subscriber.subscribe('greendotsys', (message) => {
-    console.log(message); // 'message'
-    });
+    try{
+
+        const subscriber = client.duplicate();
+        
+        await subscriber.connect();
+        await subscriber.subscribe('greendotsys', (message) => {
+            console.log(message); // 'message'
+        });
+    }catch(err){
+        console.log("ERRO AO CONECTAR NO REDIS")
+    }
 }
 
 module.exports = {
