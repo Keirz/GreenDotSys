@@ -1,38 +1,35 @@
 'use strict';
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Guests', {
+    await queryInterface.createTable('Sensors', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      firstName: {
+      Model: {
         type: Sequelize.STRING
       },
-      lastName: {
-        type: Sequelize.STRING
-      },
-      phone: {
-        type: Sequelize.STRING
-      },
-      photo_path: {
-        type: Sequelize.STRING
-      },
-      email: {
-        type: Sequelize.STRING
-      },
-      room_id: {
+      sensortype_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: { model: 'Room', key: 'id' },
+        references: { model: 'SensorTypes', key: 'id' },
         onDelete: 'CASCADE'
       },
-      checkinAt: {
-        type: Sequelize.STRING
+      equipment_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: { model: 'Equipment', key: 'id' },
+        onDelete: 'CASCADE'
       },
-      checkoutAt: {
+      owner_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: { model: 'Hotels', key: 'id' },
+        onDelete: 'CASCADE'
+      },
+      Location: {
         type: Sequelize.STRING
       },
       createdAt: {
@@ -46,6 +43,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Guests');
+    await queryInterface.dropTable('Sensors');
   }
 };

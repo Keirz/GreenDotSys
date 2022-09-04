@@ -1,18 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-   
-    const parameters= {
-        hotel:{
-            name: 'DEMO',
-            email: 'demo@demo.com'
-        }
-    }
-    res.render('billing', parameters)
-})
 
-router.get('/:hotelId', (req, res) => {
+
+router.get('/:hotelId', async (req, res) => {
    
     const {id} = req.query;
     // const hotel = await getHotelById(id);
@@ -22,5 +13,16 @@ router.get('/:hotelId', (req, res) => {
     res.render('billing', parameters)
 })
 
+// tem q ser a ultima
+router.get('/', async (req, res) => {
+   
+    const parameters= {
+        hotel:{
+            name: 'DEMO',
+            email: 'demo@demo.com'
+        }
+    }
+    res.render('billing', parameters)
+})
 module.exports = router;
 

@@ -14,9 +14,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Measurement.init({
-    firstName: DataTypes.STRING,
-    lastName: DataTypes.STRING,
-    email: DataTypes.STRING
+    value: DataTypes.STRING,
+    sensor_id: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'Measurement',

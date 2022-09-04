@@ -8,14 +8,15 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      firstName: {
+      value: {
         type: Sequelize.STRING
       },
-      lastName: {
-        type: Sequelize.STRING
-      },
-      email: {
-        type: Sequelize.STRING
+      sensor_id: {
+        type: Sequelize.INTEGER,
+        // COMENTEI P TESTES P ADIANTAR O LADO
+        // allowNull: false,
+        // references: { model: 'Sensors', key: 'id' },
+        // onDelete: 'CASCADE'
       },
       createdAt: {
         allowNull: false,

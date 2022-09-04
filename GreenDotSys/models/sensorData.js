@@ -13,7 +13,13 @@ async function subscribe(channel, callback) {
         
         await subscriber.connect();
         await subscriber.subscribe('greendotsys', (message) => {
-            console.log(message); // 'message'
+            try{
+                callback(JSON.parse(message));
+
+            }catch(err){
+                console.log(err);
+            }
+            //console.log(message);
         });
     }catch(err){
         console.log("ERRO AO CONECTAR NO REDIS")

@@ -11,12 +11,13 @@ app.engine('ejs', require('ejs-locals'));
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
-const sensorData = require('./controller/sensorData');
-const {registerMeasurement} = require('./controller/measurement');
-sensorData.subscribe('greendotsys', registerMeasurement);
+const sensorData = require('./models/sensorData');
+const {insertMeasurement} = require('./models/measurement');
+sensorData.subscribe('greendotsys', insertMeasurement);
 
 
 const routes = require('./routes/index');
+
 app.use('/billing', routes.billing);
 app.use('/dashboard', routes.dashboard);
 app.use('/profile', routes.profile);
@@ -25,6 +26,7 @@ app.use('/signup', routes.signup);
 app.use('/tables', routes.tables);
 app.use('/vr', routes.vr);
 app.use('/', routes.signin);
+
 
 
 app.listen(3000, ()=>{
