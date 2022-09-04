@@ -21,9 +21,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
   <link id="pagestyle" href="/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+  <script src="/public/js/alerta.js"></script>
 </head>
 
-<body class="g-sidenav-show  bg-gray-200">
+<body class="g-sidenav-show  bg-gray-200" onload="Alert()">
+  <script>Alert();</script>
   <script src="/js/aside.js"></script>
   <script>renderAside(1);</script>
   
@@ -234,7 +236,7 @@
               </div>
             </div>
             <div class="card-body">
-              <h6 class="mb-0 ">Redução de Consumo de Energia</h6>
+              <h6 class="mb-0 ">Controle de Consumo de Energia Semanal</h6>
               <p class="text-sm ">Última semana</p>
               <hr class="dark horizontal">
               <div class="d-flex ">
@@ -254,8 +256,8 @@
               </div>
             </div>
             <div class="card-body">
-              <h6 class="mb-0 "> Economia Mensal de Consumo </h6>
-              <p class="text-sm "> (<span class="font-weight-bolder">+8%</span>) aumento em redução de energia. </p>
+              <h6 class="mb-0 "> Consumo Mensal de Energia </h6>
+              <p class="text-sm "> (<span class="font-weight-bolder" style="color:red">+8%</span>) aumento em consumo de energia por mês. </p>
               <hr class="dark horizontal">
               <div class="d-flex ">
                 <i class="material-icons text-sm my-auto me-1">schedule</i>
@@ -274,8 +276,8 @@
               </div>
             </div>
             <div class="card-body">
-              <h6 class="mb-0 ">Quantia de Insumos Desperdiçados reduzida</h6>
-              <p class="text-sm ">Gráfico Mensal</p>
+              <h6 class="mb-0 ">Insumos Desperdiçados</h6>
+              <p class="text-sm ">Gráfico Anual</p>
               <hr class="dark horizontal">
               <div class="d-flex ">
                 <i class="material-icons text-sm my-auto me-1">schedule</i>
@@ -632,22 +634,6 @@
       </div>
 
       <!--Alert div RICARDO-->
-      <div class="position-fixed bottom-1 end-1 z-index-2">
-      <div class="alert-danger fade hide p-2 mt-2 bg-white" role="alert" aria-live="assertive" id="dangerToast" aria-atomic="true">
-        <div class="toast-header border-0">
-          <i class="material-icons text-danger me-2">
-      campaign
-    </i>
-          <span class="me-auto text-gradient text-danger font-weight-bold">Consumo Ativo irregular </span>
-          <small class="text-body">11 minutos atrás</small>
-          <i class="fas fa-times text-md ms-3 cursor-pointer" data-bs-dismiss="toast" aria-label="Close"></i>
-        </div>
-        <hr class="horizontal dark m-0">
-        <div class="toast-body">
-          Quarto 102 - Hóspede Ausente - Sensor Ativo.
-        </div>
-      </div>
-      </div>
       
       <footer class="footer py-4  ">
         <div class="container-fluid">
@@ -859,7 +845,7 @@
       data: {
         labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
         datasets: [{
-          label: "Mobile apps",
+          label: "R$/Kg",
           tension: 0,
           borderWidth: 0,
           pointRadius: 5,
@@ -945,6 +931,8 @@
   </script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <script src="/js/material-dashboard.min.js?v=3.0.4"></script>
+  <script src="/public/js/alerta.js"></script>
+  <script src="/public/js/function-alert.js"></script>
 </body>
 
 </html>
