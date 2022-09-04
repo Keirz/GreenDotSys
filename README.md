@@ -15,10 +15,10 @@ O sistema utiliza-se de materiais Free(MIT) disponibilziados pelo BootStrap, Fon
 
 
 
-## Estrutura dos dados HTML-Front-end
+## Estrutura dos prototipo HTML-Front-end
 
 ```
-html v.alpha.1.0
+front/html v.alpha.1.0
     ├── assets
     │   ├── css
     │   ├── fonts
@@ -44,6 +44,30 @@ html v.alpha.1.0
     |──────visual-reality-html
 ```
 
+## Estrutura do projeto e como rodar
+### estrutura
+    - é dividido em dois projetos. O GrennDotSys (Aplicação principal) e SensorsSimulator(simulador de dados de sensores para efeitos de testes)
+### Como rodar: 
+    - Baixar e instalar Redis, node.js v14.17.1
+    - Acessar a pasta GreenDotSys
+    - rodar o comando npm install
+    - rodar o comando npx sequelize-cli db:migrate
+    - rodar o comando npx sequelize-cli db:seed:all
+    - rodar o redis local
+    - rodar o comando npm start
+### como rodar o simulador
+- acessar a pasta SensorsSimulator
+- npm install
+- rodar o redis local
+- node index.js
+### rotas
+- http://127.0.0.1:3000/signup
+- http://127.0.0.1:3000/dashboard
+- http://127.0.0.1:3000/profile
+- http://127.0.0.1:3000/login
+- http://127.0.0.1:3000/billing
+- http://127.0.0.1:3000/tables
+- http://127.0.0.1:3000/vr
 
 ## Responsividade
 
@@ -54,4 +78,8 @@ html v.alpha.1.0
 - O sistema foi desenvolvido para atender o MVP do HackinRio2022, porém, suas funcionalidades plenas foram simuladas com dados simulados.
 
 - A implementação completa do sistema requisitaria completo suporte de Hardware nos Hotéis? Sim e não. Fizemos questão de manter uma função manual de controle de Saída/Sensores para Hótes/Pousadas que não automatizaram seu sistema ainda.
+- 
+## Veja nosso Video:
+
+[![Watch the video](https://img.youtube.com/vi/xeePhemBc5A/maxresdefault.jpg)](https://youtu.be/xeePhemBc5A)
 
