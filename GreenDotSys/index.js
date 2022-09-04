@@ -11,6 +11,11 @@ app.engine('ejs', require('ejs-locals'));
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
+const sensorData = require('./controller/sensorData');
+const {registerMeasurement} = require('./controller/measurement');
+sensorData.subscribe('greendotsys', registerMeasurement);
+
+
 const routes = require('./routes/index');
 app.use('/billing', routes.billing);
 app.use('/dashboard', routes.dashboard);

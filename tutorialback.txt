@@ -11,6 +11,7 @@ npx sequelize-cli db:seed:all
 
 
 npm start
+redis rodando p simulars
 
 
 rotas:
@@ -21,3 +22,11 @@ http://127.0.0.1:3000/login
 http://127.0.0.1:3000/billing
 http://127.0.0.1:3000/tables
 http://127.0.0.1:3000/vr
+
+
+
+para simular dados de sensores no SensorsSimulator
+
+- npm install
+- rodar o redis local
+- node index.js
