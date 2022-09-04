@@ -1,5 +1,5 @@
 GREENDOTSYS V.A.1.0
-![Image](https://drive.google.com/file/d/1I_L6QnXAt4OrwGyDyMmwgo7VITWDB78e/view?usp=sharing)
+![Image](https://drive.google.com/file/d/1I_L6QnXAt4OrwGyDyMmwgo7VITWDB78e/preview)
 
 [GreenDotSys] é um sistema de Interface e tratamento de dados feito inicialmente para aplicação em Hotelarias e Pousadas.
 O sistema consiste de um Dashboard, pagina de Login e Cadastro, Tabelas e Gráficos visuais e responsivos para demonstração e tratamento de dados sobre a sustentabilidade da Conta-Hotel cadastrada.
