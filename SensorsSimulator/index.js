@@ -33,15 +33,29 @@ function sleep(ms) {
   }
 
 async function main(){
+    const minTemperature =15; // vai aq mesmo q to c sono, dps muda
+    const maxTemperature = 30;
+    let value = 15;
+    let isIncreasing = true;
     console.log("VAI CONECTAR");
     await client.connect();
     console.log("CONECTOU")
     while(1){
-        await sleep(1000);
+        await sleep(3000);
+      
         publish('greendotsys',{
-            sensorId:123,
-            data:30
+            sensorId:1,
+            value
         })
+        if(value<=minTemperature){
+            isIncreasing = true
+            value +=1;
+        }else if(value>=maxTemperature){
+            isIncreasing = false
+            value -=1;
+        }else{
+            value = isIncreasing?value+1:value-1;
+        }
         console.log("publish")
     }    
 }
